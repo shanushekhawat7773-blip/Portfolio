@@ -10,6 +10,7 @@ import {
   Award,
   Sparkles,
   CheckCircle,
+  Users,
 } from "lucide-react";
 
 const RECOGNITIONS = [
@@ -54,14 +55,24 @@ const RECOGNITIONS = [
     tags: ["Geospatial AI", "Routing APIs", "Mobility Intelligence", "GeoJSON"],
   },
   {
+    title: "Internshala Student Partner (ISP)",
+    organization: "Internshala Student Network",
+    badgeLabel: "Campus Partner",
+    description:
+      "Appointed student ambassador driving technical skill-building, internship outreach, peer mentorship, and student engagements representing IIT Jodhpur.",
+    icon: Users,
+    accent: "#FFA843",
+    tags: ["Campus Leadership", "Internship Outreach", "Mentorship", "Community"],
+  },
+  {
     title: "IIT Jodhpur AI/ML Scholar",
     organization: "Indian Institute of Technology Jodhpur",
-    badgeLabel: "B.Tech Candidate",
+    badgeLabel: "BS Degree",
     description:
-      "Pursuing a rigorous undergraduate engineering curriculum at IIT Jodhpur focusing on computer vision algorithms, mathematical foundations of machine learning, and scalable systems.",
+      "Pursuing a rigorous undergraduate engineering curriculum at IIT Jodhpur in BS in Applied AI and Data Science focusing on computer vision, deep learning theory, and scalable intelligence systems.",
     icon: GraduationCap,
     accent: "#FF5A1F",
-    tags: ["Machine Learning", "Linear Algebra", "Optimization", "Computer Vision"],
+    tags: ["Applied AI", "Data Science", "Machine Learning", "Computer Vision"],
   },
 ];
 

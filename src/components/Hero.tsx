@@ -102,7 +102,7 @@ export function Hero() {
             >
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#14100C]/90 border border-[#FF9A2E]/30 text-[#FFA843] text-xs font-mono tracking-wider shadow-[0_0_15px_rgba(255,154,46,0.2)]">
                 <span className="w-2 h-2 rounded-full bg-[#FF9A2E] animate-pulse" />
-                <span>AI/ML Scholar · IIT Jodhpur</span>
+                <span>BS in Applied AI & Data Science · IIT Jodhpur</span>
               </div>
 
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#120F0C]/80 border border-[#261F1A] text-[#8A8178] text-xs font-mono">

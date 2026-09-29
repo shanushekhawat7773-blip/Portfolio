@@ -92,7 +92,7 @@ export function Navbar() {
               ARUN SINGH
             </span>
             <span className="font-mono text-[10px] uppercase tracking-widest text-[#8A8178]">
-              AI/ML · IIT Jodhpur
+              Applied AI & Data Science · IIT Jodhpur
             </span>
           </div>
         </Link>

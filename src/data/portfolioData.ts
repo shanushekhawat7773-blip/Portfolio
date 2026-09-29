@@ -27,11 +27,11 @@ export interface PersonalData {
 
 export const PERSONAL_DATA: PersonalData = {
   name: "Arun Singh",
-  headline: "AI/ML Student @ IIT Jodhpur",
+  headline: "BS in Applied AI and Data Science @ IIT Jodhpur",
   location: "Jaipur, India",
   tagline: "I build AI systems that watch, predict and protect.",
   bio: [
-    "AI/ML student at IIT Jodhpur engineering full-stack intelligent systems across computer vision, fraud prevention, recommendation engines, and cognitive wellness.",
+    "BS in Applied AI and Data Science student at IIT Jodhpur engineering full-stack intelligent systems across computer vision, fraud prevention, recommendation engines, and cognitive wellness.",
     "Driven by solving real-world ambiguity through deep learning, I build across the entire lifecycle — from data curation and model fine-tuning to low-latency inference pipelines, responsive dashboards, and cloud deployment.",
     "Active in global developer ecosystems, constantly experimenting with cutting-edge vision backbones, multimodal architectures, and robust production tooling."
   ],
@@ -69,6 +69,13 @@ export const PERSONAL_DATA: PersonalData = {
       description: "Recognized for engineering geospatial applications, map visual layers, and real-time location intelligence.",
       icon: "map-pin",
       category: "Geospatial Intelligence"
+    },
+    {
+      title: "ISP · Internshala Student Partner",
+      organization: "Internshala",
+      description: "Appointed student partner facilitating skill-building initiatives, industry opportunities, and student engagements.",
+      icon: "users",
+      category: "Leadership & Community"
     }
   ],
   links: {
@@ -85,8 +92,8 @@ export const PERSONAL_DATA: PersonalData = {
     },
     {
       label: "Programs & Badges",
-      value: "4",
-      sublabel: "Google Cloud, NVIDIA, Google Maps"
+      value: "5",
+      sublabel: "Google Cloud, NVIDIA, Google Maps, ISP"
     },
     {
       label: "Core Stack Disciplines",
