@@ -71,6 +71,13 @@ export const PERSONAL_DATA: PersonalData = {
       category: "Geospatial Intelligence"
     },
     {
+      title: "MyGov Student Ambassador",
+      organization: "MyGov India · MeitY",
+      description: "Selected youth ambassador driving citizen engagement, digital governance awareness, and government innovation initiatives.",
+      icon: "award",
+      category: "National Governance & Leadership"
+    },
+    {
       title: "ISP · Internshala Student Partner",
       organization: "Internshala",
       description: "Appointed student partner facilitating skill-building initiatives, industry opportunities, and student engagements.",
@@ -92,8 +99,8 @@ export const PERSONAL_DATA: PersonalData = {
     },
     {
       label: "Programs & Badges",
-      value: "5",
-      sublabel: "Google Cloud, NVIDIA, Google Maps, ISP"
+      value: "6",
+      sublabel: "Google Cloud, NVIDIA, MyGov, ISP, Maps"
     },
     {
       label: "Core Stack Disciplines",

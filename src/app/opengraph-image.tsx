@@ -63,10 +63,12 @@ export default async function Image() {
           </p>
         </div>
 
-        <div style={{ display: "flex", gap: 24, color: "#FFA843", fontSize: 20 }}>
+        <div style={{ display: "flex", gap: 20, color: "#FFA843", fontSize: 18 }}>
           <span>Google Cloud Innovator</span>
           <span>·</span>
-          <span>NVIDIA Community Member</span>
+          <span>NVIDIA Community</span>
+          <span>·</span>
+          <span>MyGov Ambassador</span>
           <span>·</span>
           <span>Jaipur, India</span>
         </div>

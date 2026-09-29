@@ -157,7 +157,7 @@ export function About() {
                 </p>
               </div>
 
-              {/* Counter 2: Programs & Badges 5 */}
+              {/* Counter 2: Programs & Badges 6 */}
               <div className="p-5 rounded-xl bg-[#14100C] border border-[#261F1A] hover:border-[#FF9A2E]/40 transition-colors group">
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-mono text-[11px] uppercase tracking-wider text-[#8A8178]">
@@ -166,10 +166,10 @@ export function About() {
                   <Award className="w-4 h-4 text-[#FFA843] group-hover:scale-110 transition-transform" />
                 </div>
                 <div className="font-display text-4xl sm:text-5xl text-[#F3EDE4] group-hover:text-ember-gradient transition-colors">
-                  5
+                  6
                 </div>
                 <p className="font-mono text-xs text-[#8A8178] mt-1">
-                  Google Cloud, NVIDIA, Google Maps, ISP Partner
+                  Google Cloud, NVIDIA, MyGov, ISP & Maps
                 </p>
               </div>
 

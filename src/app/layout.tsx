@@ -45,6 +45,8 @@ export const metadata: Metadata = {
     "FinGuard-AI",
     "Google Cloud Innovator",
     "NVIDIA Community Member",
+    "MyGov Student Ambassador",
+    "Internshala Student Partner",
     "Jaipur India",
   ],
   authors: [{ name: "Arun Singh", url: "https://github.com/shanushekhawat7773-blip" }],

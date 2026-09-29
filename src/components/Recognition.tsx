@@ -55,6 +55,16 @@ const RECOGNITIONS = [
     tags: ["Geospatial AI", "Routing APIs", "Mobility Intelligence", "GeoJSON"],
   },
   {
+    title: "MyGov Student Ambassador",
+    organization: "MyGov India · Ministry of Electronics & IT",
+    badgeLabel: "National Ambassador",
+    description:
+      "Appointed youth ambassador driving citizen engagement, digital governance advocacy, public innovation initiatives, and student awareness representing IIT Jodhpur.",
+    icon: Award,
+    accent: "#FFA843",
+    tags: ["Digital India", "Youth Leadership", "Citizen Engagement", "Public Innovation"],
+  },
+  {
     title: "Internshala Student Partner (ISP)",
     organization: "Internshala Student Network",
     badgeLabel: "Campus Partner",
@@ -131,6 +141,7 @@ export function Recognition() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {RECOGNITIONS.map((item, index) => {
             const Icon = item.icon;
+            const isFullWidth = index === 6;
             return (
               <motion.div
                 key={item.title}
@@ -138,7 +149,11 @@ export function Recognition() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group relative rounded-2xl bg-[#14100C] border border-[#261F1A] hover:border-[#FF9A2E]/50 p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 shadow-[0_8px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_12px_40px_rgba(255,154,46,0.18)]"
+                className={`group relative rounded-2xl bg-[#14100C] border border-[#261F1A] hover:border-[#FF9A2E]/50 p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 shadow-[0_8px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_12px_40px_rgba(255,154,46,0.18)] ${
+                  isFullWidth
+                    ? "md:col-span-2 lg:col-span-3 bg-gradient-to-r from-[#14100C] via-[#1A120D] to-[#14100C] border-[#FF9A2E]/35"
+                    : ""
+                }`}
               >
                 {/* Subtle top edge ember gradient line on hover */}
                 <div className="absolute top-0 left-6 right-6 h-[2px] bg-gradient-to-r from-transparent via-[#FF9A2E] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
