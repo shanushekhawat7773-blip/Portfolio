@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cinder: #0A0806;
+    --card-cinder: #120F0C;
+    --surface-cinder: #17130F;
+    --border-cinder: rgba(255, 154, 46, 0.12);
+    --border-cinder-hover: rgba(255, 154, 46, 0.35);
+    --text-primary: #F3EDE4;
+    --text-muted: #8A8178;
+    --ember-start: #FF9A2E;
+    --ember-mid: #FF7522;
+    --ember-end: #FF5A1F;
+  }
+
+  * {
+    border-color: var(--border-cinder);
+  }
+
+  body {
+    background-color: #0A0806;
+    color: #F3EDE4;
+    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+/* Custom Typography Utilities */
+.font-display {
+  font-family: var(--font-bebas), "Big Shoulders Display", "Anton", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.font-mono {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Text Stroke Utilities for giant outlined type */
+.text-stroke-cinder {
+  -webkit-text-stroke: 1.5px rgba(243, 237, 228, 0.18);
+  color: transparent;
+  transition: -webkit-text-stroke 0.4s ease, color 0.4s ease;
+}
+
+.text-stroke-cinder:hover {
+  -webkit-text-stroke: 1.5px rgba(255, 154, 46, 0.55);
+  color: rgba(255, 154, 46, 0.05);
+}
+
+.text-stroke-ember {
+  -webkit-text-stroke: 1px rgba(255, 154, 46, 0.45);
+  color: transparent;
+}
+
+/* Ember Gradients */
+.text-ember-gradient {
+  background: linear-gradient(135deg, #FFA843 0%, #FF9A2E 35%, #FF5A1F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-ember-gradient {
+  background: linear-gradient(135deg, #FF9A2E 0%, #FF6B1F 50%, #FF5A1F 100%);
+}
+
+.border-ember-gradient {
+  border-image: linear-gradient(to bottom right, rgba(255, 154, 46, 0.4), rgba(255, 90, 31, 0.1)) 1;
+}
+
+/* Glow Effects */
+.glow-ember-sm {
+  box-shadow: 0 0 15px -2px rgba(255, 154, 46, 0.25);
+}
+
+.glow-ember-md {
+  box-shadow: 0 0 30px -4px rgba(255, 154, 46, 0.35);
+}
+
+.glow-ember-lg {
+  box-shadow: 0 0 60px -8px rgba(255, 106, 0, 0.45);
+}
+
+.rim-light-amber {
+  filter: drop-shadow(0 0 25px rgba(255, 154, 46, 0.3)) drop-shadow(4px -4px 15px rgba(255, 90, 31, 0.4));
+}
+
+/* Cinematic Vignette */
+.cinematic-vignette {
+  background: radial-gradient(circle at 50% 50%, transparent 40%, rgba(10, 8, 6, 0.85) 100%);
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0806;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #261F1A;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF9A2E;
+}
+
+/* Breathing animation for ambient glows */
+@keyframes breathGlow {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.04);
+  }
+}
+
+.animate-glow-breathe {
+  animation: breathGlow 6s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
