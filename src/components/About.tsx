@@ -73,10 +73,11 @@ export function About() {
                 {/* Photo with ember rim light & grain */}
                 <div className="relative rounded-xl overflow-hidden bg-[#0A0806] border border-[#261F1A]">
                   <Image
-                    src="/arun.png"
+                    src="/arun-cutout.png"
                     alt="Portrait of Arun Singh"
                     width={400}
                     height={480}
+                    unoptimized
                     className="w-full h-auto object-cover rim-light-amber transition-transform duration-700 group-hover:scale-105"
                   />
 

@@ -134,37 +134,48 @@ export function Hero() {
           {/* Secondary Core Rim Glow */}
           <div className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] sm:w-[320px] h-[220px] sm:h-[320px] rounded-full bg-[#FF7522]/20 blur-[60px] pointer-events-none z-1" />
 
-          {/* Arun's Cutout Layered IN FRONT of the giant text */}
+          {/* Arun's Portrait inside a rounded cinematic frame with amber rim glow */}
           <motion.div
             style={{ y: photoY }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-            className="relative z-10 w-full max-w-[320px] sm:max-w-[380px] md:max-w-[430px] flex items-center justify-center pt-8 sm:pt-10"
+            className="relative z-10 w-full max-w-[320px] sm:max-w-[360px] flex items-center justify-center pt-6 sm:pt-8"
           >
             <div className="relative group w-full flex items-center justify-center">
-              {/* Amber rim light wrapper */}
-              <div className="relative w-full overflow-hidden flex justify-center [mask-image:linear-gradient(to_bottom,black_75%,transparent_100%)]">
-                <Image
-                  src="/arun.png"
-                  alt="Portrait of Arun Singh"
-                  width={430}
-                  height={550}
-                  priority
-                  quality={95}
-                  className="w-auto h-auto max-h-[420px] sm:max-h-[490px] object-contain drop-shadow-[0_0_35px_rgba(255,154,46,0.35)] drop-shadow-[6px_-4px_18px_rgba(255,90,31,0.45)] transition-transform duration-700 group-hover:scale-[1.02]"
-                />
+              {/* Backlit Ember Glow behind frame */}
+              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-[#FF5A1F]/30 via-[#FF9A2E]/20 to-transparent blur-2xl pointer-events-none" />
 
-                {/* Subtle Grain Overlay on the photo to hide softness */}
-                <div
-                  aria-hidden="true"
-                  className="pointer-events-none absolute inset-0 mix-blend-overlay opacity-25 bg-[radial-gradient(#FF9A2E_1px,transparent_1px)] [background-size:12px_12px]"
-                />
+              {/* Framed Portrait Container */}
+              <div className="relative w-full rounded-2xl bg-[#14100C] border border-[#FF9A2E]/40 p-2.5 shadow-[0_20px_50px_rgba(0,0,0,0.85)] overflow-hidden group-hover:border-[#FF9A2E] transition-all duration-500">
+                <div className="relative rounded-xl overflow-hidden bg-[#0A0806]">
+                  <Image
+                    src="/arun-original.jpg"
+                    alt="Portrait of Arun Singh"
+                    width={360}
+                    height={465}
+                    priority
+                    unoptimized
+                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+
+                  {/* Cinematic dark vignette & amber rim light overlay */}
+                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_45%,rgba(10,8,6,0.7)_95%)]" />
+                  <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_35px_rgba(255,154,46,0.35)]" />
+
+                  {/* Grain Overlay */}
+                  <div
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-0 mix-blend-overlay opacity-25 bg-[radial-gradient(#FF9A2E_1px,transparent_1px)] [background-size:12px_12px]"
+                  />
+
+                  {/* Technical corner brackets */}
+                  <div className="absolute top-2.5 left-2.5 w-3 h-3 border-t-2 border-l-2 border-[#FF9A2E]" />
+                  <div className="absolute top-2.5 right-2.5 w-3 h-3 border-t-2 border-r-2 border-[#FF9A2E]" />
+                  <div className="absolute bottom-2.5 left-2.5 w-3 h-3 border-b-2 border-l-2 border-[#FF9A2E]" />
+                  <div className="absolute bottom-2.5 right-2.5 w-3 h-3 border-b-2 border-r-2 border-[#FF9A2E]" />
+                </div>
               </div>
-
-              {/* Glowing Corner Accents */}
-              <div className="absolute -bottom-2 -left-2 w-4 h-4 border-b-2 border-l-2 border-[#FF9A2E]/60 pointer-events-none" />
-              <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-[#FF9A2E]/60 pointer-events-none" />
             </div>
           </motion.div>
         </div>
