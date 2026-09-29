@@ -70,28 +70,16 @@ export function About() {
 
               {/* Framed Cinematic Card */}
               <div className="relative rounded-2xl bg-[#14100C] border border-[#FF9A2E]/30 p-4 shadow-[0_15px_40px_rgba(0,0,0,0.8)] overflow-hidden group">
-                {/* Photo with ember rim light & grain */}
-                <div className="relative rounded-xl overflow-hidden bg-[#0A0806] border border-[#261F1A]">
+                {/* Photo with ember rim light & seamless blend */}
+                <div className="relative rounded-xl overflow-hidden bg-transparent flex justify-center">
                   <Image
                     src="/arun-cutout.png"
                     alt="Portrait of Arun Singh"
                     width={400}
                     height={480}
                     unoptimized
-                    className="w-full h-auto object-cover rim-light-amber transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-auto object-contain drop-shadow-[0_0_25px_rgba(255,154,46,0.35)] transition-transform duration-700 group-hover:scale-105"
                   />
-
-                  {/* Film Grain overlay on photo */}
-                  <div
-                    aria-hidden="true"
-                    className="pointer-events-none absolute inset-0 opacity-20 mix-blend-overlay bg-[radial-gradient(#FF9A2E_1px,transparent_1px)] [background-size:12px_12px]"
-                  />
-
-                  {/* Corner aesthetic brackets */}
-                  <div className="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-[#FF9A2E]/80" />
-                  <div className="absolute top-2 right-2 w-3 h-3 border-t-2 border-r-2 border-[#FF9A2E]/80" />
-                  <div className="absolute bottom-2 left-2 w-3 h-3 border-b-2 border-l-2 border-[#FF9A2E]/80" />
-                  <div className="absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-[#FF9A2E]/80" />
                 </div>
 
                 {/* Card footer details */}
